@@ -1,0 +1,139 @@
+:root {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}   
+.logo{
+    padding: 1.5rem 7rem
+}
+
+.light-red {
+    font-size: 50px;
+    padding: 0 7rem;
+    color:  rgba(255, 0, 0, 0.411);
+    font-weight: 300;
+    letter-spacing: 10px;
+}
+
+
+.heavy-black {
+    font-size: 50px;
+    padding: 0 7rem;
+    
+    letter-spacing: 10px;
+}
+
+
+.left{ 
+  display:flex;
+  flex-wrap: wrap;
+  width: 50%;
+  float: left;
+
+}
+.right{
+    float: right;
+    display:flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.right img{
+    margin-top: 0%;
+    padding-left: 0px;
+    height: 100vh;
+    width: auto;
+}
+main {
+    
+   padding:0 7rem;
+    color:  rgba(255, 0, 0, 0.411);
+    letter-spacing: 0px;
+    line-height: 25px;
+    max-width: 700px;
+    
+   
+}
+header{
+     padding-top: 40px;
+}
+input {
+    height: 30px;
+    width: 280px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(230 210 212 / 1);
+    background: transparent;
+    outline: none;
+}
+input::placeholder {
+    padding-left: 8px;
+    color:  rgba(255, 0, 0, 0.411);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+.submit {
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    display: inline-block;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    font-size: 22px;
+    font-weight: 300;
+}
+.submit:hover {
+    border: none;
+    background-image: linear-gradient(hsla(0, 80%, 86%, 0.7), hsla(0, 80%, 86%, 0.7));   
+     box-shadow: 0 10px 15px 0 hsla(0, 36%, 70%, 0.7);
+    
+}
+#err {
+    display: none;
+    color: hsl(0, 93%, 68%);
+    margin: 0;
+}
+.error {
+    background: url(/icon-error.svg) no-repeat 95% 40%;
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
+
+html{
+    margin-top: 40px;
+    margin-left: 100px; 
+    margin-right: 100px;
+}
+body{
+    background-image: url(/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+@media  (max-width: 768px) {
+    
+    .left{
+       width:100%;
+    }
+    .right{
+        width: 100%;
+    }
+    html{
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+
+
+    .right img{
+        margin-right: 50px;
+        padding-left: 0%;
+        height: 50vh;
+        width: 100vh;
+    }
+    .input{
+        width: 200px;
+    }    
+    .submit{
+        position:fixed;
+    }
+}
+     
